@@ -84,4 +84,20 @@ func UseVar() {
 
 	// 인터페이스 출력
 	fmt.Println("Interface:", anyVal) // 인터페이스에 저장된 값 출력
+
+	// 여러 변수를 동시에 선언하고 초기화 해보기
+	x, y, z := 1, 2, 3
+	fmt.Println(x, y, z)
+
+	a, b, c := "Go", true, 3.14
+	fmt.Println(a, b, c)
+
+	// 여러 변수를 묶음으로 선언
+	var (
+		name  = "Alice"
+		age   = 25
+		alive = true
+	)
+	fmt.Println(name, age, alive)
+
 }
